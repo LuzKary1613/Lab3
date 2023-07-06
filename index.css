@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+  margin-right: 60px;
+}
+
+.titulo {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  
+  
+  
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1024px;
+  margin-top: 20px;
+}
+
+.product {
+  flex: 0 0 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content:space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.social li {
+  margin-bottom: 10px;
+}
+
+.product {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+footer {
+  border-top: 1px solid gray;
+  padding-top: 10px;
+}
+
+.navbar {
+  border: 1px solid gray;
+  background:grey;
+  padding: 5px;
+}
